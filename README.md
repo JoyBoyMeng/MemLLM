@@ -22,7 +22,6 @@ python train_link_prediction.py \
   --gpu 0 \
   --bs 16 \
   --mem_dim 128 \
-  --token_dim 4096 \
   --n_degree 20 \
   --lr 5e-4 \
   --n_epoch 50 \
