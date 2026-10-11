@@ -3,7 +3,6 @@
 ## Environment Setup
 
 ```bash
-git clone https://github.com/JoyBoyMeng/MemLLM.git
 cd MemLLM
 
 conda create -n memllm python=3.10 -y
