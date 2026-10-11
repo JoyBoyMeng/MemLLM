@@ -24,16 +24,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser('LLM for social network link prediction training')
     parser.add_argument('-d', '--data', type=str, help='Dataset name',
                         default='yelp')
-    parser.add_argument('--bs', type=int, default=2, help='Batch_size')
+    parser.add_argument('--bs', type=int, default=16, help='Batch_size')
     parser.add_argument('--n_epoch', type=int, default=50, help='Number of epochs')
     parser.add_argument('--gpu', type=int, default=0, help='gpu')
-    parser.add_argument('--llm_path', type=str, default='../LLM/shakechen/Llama-2-7b-hf', help='Pretrained LLM path')
-    parser.add_argument('--mem_dim', type=int, default=172, help='Dimensions of the memory')
+    parser.add_argument('--llm_path', type=str, default='../LLM/shakechen/Llama-3-8b', help='Pretrained LLM path')
+    parser.add_argument('--mem_dim', type=int, default=128, help='Dimensions of the memory')
     parser.add_argument('--mess_dim', type=int, default=100, help='Dimensions of the message')
     parser.add_argument('--token_dim', type=int, default=4096, help='Dimensions of the message')
     parser.add_argument('--lr', type=float, default=0.0001, help='Learning rate')
     parser.add_argument('--patience', type=int, default=10, help='Patience for early stopping')
-    parser.add_argument('--n_degree', type=int, default=10, help='Number of neighbors to sample')
+    parser.add_argument('--n_degree', type=int, default=20, help='Number of neighbors to sample')
     parser.add_argument('--backprop_every', type=int, default=1, help='Every how many batches to '
                                                                       'backprop')
 
